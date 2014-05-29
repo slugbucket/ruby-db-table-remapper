@@ -1,0 +1,29 @@
+Ruby scripts to grab the contents of one database and copying them into a different datbase allowing for different tables and column names in the target.
+
+Simple script to parse a YAML file to determine the translation required
+in the names and columns from a source to destination database.
+
+It would be great if was possible to provide the column names and their
+respective values as arrays for including in the prepared statements;
+the code would be a lot cleaner, but instead we have to pick apart the
+columns and values to create an insert statement for every value.
+
+The expected YAML format is as follows:
+
+database:
+  - [source_database, src_db_user, src_db_passwd]
+  - [destination_database, dest_db_user, dest_db_passwd]
+table1:
+  - column1
+  - column2
+  - [source_column, destination_column]
+destination_table:
+source_table:
+  - column1
+  - column2
+
+The script will most likely error if the data is not in that format.
+There are no nods or winks to security, bounds checking or any other
+usage consideration. It's quick and dirty and does the job.
+
+julian rawcliffe/May 2014

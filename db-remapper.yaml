@@ -1,0 +1,65 @@
+database:
+  - [source_database, src_db_user, src_db_passwd]
+  - [destination_database, dest_db_user, dest_db_passwd]
+escalation_levels:
+ - id
+ - [label, name]
+ - created_at
+ - updated_at
+impact_hours:
+ - id
+ - [label, name]
+ - description
+ - created_at
+ - updated_at
+impact_levels:
+ - id
+ - [label, name]
+ - description
+ - created_at
+ - updated_at
+locations:
+ - id
+ - [label, name]
+ - description
+ - created_at
+ - updated_at
+operating_systems:
+os_tables:
+ - id
+ - [label, name]
+ - created_at
+ - updated_at
+support_group_members:
+ - [groupid, support_group_id]
+ - [contactid, support_contact_id]
+ - created_at
+ - updated_at
+support_groups:
+ - id
+ - name
+ - [details, description]
+ - created_at
+ - updated_at
+vendors:
+ - id
+ - [label, name]
+ - telephone
+ - [details, description]
+ - created_at
+ - updated_at
+warranty_contracts:
+ - id
+ - name
+ - [vendor, vendor_id]
+ - [contract_type, warranty_type_id]
+ - expiry
+ - [notes, description]
+ - created_at
+ - updated_at
+warranty_types:
+ - id
+ - [label, name]
+ - description
+ - created_at
+ - updated_at
