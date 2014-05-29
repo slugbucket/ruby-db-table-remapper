@@ -1,4 +1,4 @@
-Ruby scripts to grab the contents of one database and copying them into a different datbase allowing for different tables and column names in the target.
+Ruby scripts to grab the contents of one database and copying them into a different database allowing for different tables and column names in the target.
 
 Simple script to parse a YAML file to determine the translation required
 in the names and columns from a source to destination database.
